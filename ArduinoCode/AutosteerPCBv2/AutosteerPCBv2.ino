@@ -15,7 +15,7 @@
                                         // 2 = ADS1115 Differential Mode - Connect Sensor GND to A1, Signal to A0
                                             // These sensors are factory installed and powered by tractor oem wiring.
                                  
-  #define WAS_Invert 0                  // set to 1 to Change Direction of Wheel Angle Sensor, must be positive turning right 
+  #define WAS_Invert 1                  // set to 1 to Change Direction of Wheel Angle Sensor, must be positive turning right 
   
   #define Motor_Direction_Invert 0      // 1 = reverse output direction (Valve & Motor) 0 = Normal
 
@@ -60,16 +60,16 @@
   //Connect ground only for cytron, Connect Ground and +5v for IBT2
   
   //Dir1 for Cytron Dir, Both L and R enable for IBT2
-  #define DIR1_RL_ENABLE  4  //PD4
+  #define DIR1_RL_ENABLE  12  //PD4
 
   //PWM1 for Cytron PWM, Left PWM for IBT2
-  #define PWM1_LPWM  3  //PD3
+  #define PWM1_LPWM  11  //PD3
 
   //Not Connected for Cytron, Right PWM for IBT2
   #define PWM2_RPWM  9 //D9
 
   //--------------------------- Switch Input Pins ------------------------
-  #define STEERSW_PIN 6 //PD6
+  #define STEERSW_PIN 10 //PD6
   #define WORKSW_PIN 7  //PD7
   #define REMOTE_PIN 8  //PB0
 
